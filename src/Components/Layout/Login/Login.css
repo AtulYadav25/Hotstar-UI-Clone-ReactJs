@@ -1,0 +1,118 @@
+.login-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    font-family: 'Roboto';
+    background: rgba(23, 23, 23, 0.4);
+    transition: .2s;
+    animation: animLogin 1s linear;
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+.displayNone{
+    transform: translateY(20px);
+    pointer-events: none;
+    opacity: 0;
+}
+
+@keyframes animLogin {
+    0%{
+    }
+    100%{
+    }
+}
+
+.login-box{
+    background: #171f30;
+    padding: 75px 35px;
+    width: 400px;
+    position: relative;
+    color: var(--text-color);
+}
+
+.login-box .login-head{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.login-box .login-btn{
+    background: #16263f;
+    color: #1f80e0;
+    border: 1px solid #1f80e0;
+    padding: 14px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.login-box p{
+    text-align: center;
+    color: var(--text-light);
+}
+
+.inputNumber{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.inputNumber h3{
+    position: absolute;
+    font-weight: 500;
+    border-right: 1px solid var(--text-light);
+    padding: 0 4px 0 0;
+    color: var(--text-light);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    margin: 0;
+    pad: 0;
+    font-size: 16px;
+}
+
+.inputNumber input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #1f80e0;
+    background: transparent;
+    color: var(--text-light);
+    outline: none;
+    padding: 8px 0 6px 40px;
+    font-size: 18px;
+}
+
+ input:focus:valid{
+    border-bottom: 2px solid #1f80e0;
+}
+
+.inputNumber input[type=number]::-webkit-inner-spin-button, 
+.inputNumberinput[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.x-login{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 1;
+    font-size: 24px;
+    color: var(--text-light);
+    cursor: pointer;
+}

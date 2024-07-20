@@ -1,0 +1,278 @@
+.sub-btn{
+    background: #1f80e0;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    font-weight: 600;
+    font-family: 'Roboto';
+    font-size: 11px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 16px;
+}
+
+
+
+.hotstarLogo{
+    height: 38px;
+    cursor: pointer;
+}
+
+.subs-nav{
+    display: flex;
+    height: 90px;
+    padding: 0 4%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-subs-nav p{
+    margin: 1px 0;
+    color: var(--text-color);
+    font-family: 'Poppins';
+    font-size: 11px;
+}
+
+.left-subs-nav p span:nth-child(1){
+    color: var(--text-color);
+}
+
+.left-subs-nav p span{
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+.left-subs-nav p span:hover{
+    color: var(--text-color);
+}
+
+.subscribe-container{
+    margin-bottom: 40px;
+}
+
+.subsPlanContainer{
+    width: 100%;
+    position: relative;
+    height: calc(100vh);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    font-family: 'Roboto';
+}
+
+.subsPlanContainer h1{
+    font-weight: 500;
+    z-index: 10;
+    font-size: 24px;
+}
+
+.subsPlanContainer .subsPlan{
+    background: linear-gradient(to bottom, #192133, #111826);
+    padding: 0 50px 20px;
+    border-radius: 8px;
+    width: 50%;
+    -webkit-box-shadow: 0 -80px 100px 0 #0c111bc0;
+    box-shadow: 0 -80px 100px 0 #0c111bc0;
+}
+
+.subsPlan table{
+    width: 100%;
+    margin-top: 20px;
+    color: var(--text-light);
+    border-collapse: collapse;
+}
+
+.subsPlan table th{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.subsPlan table tr td span{
+    color: #1f80e0;
+    font-size: 12px;
+    font-family: 'Poppins';
+}
+
+.subsPlan table tr td{
+    padding: 16px 10px;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.subsPlan table tr td:nth-child(2),
+.subsPlan table tr td:nth-child(3){
+    text-align: center;
+}
+
+.subsPlan table i{
+    font-size: 20px;
+}
+
+.subsPlan table tr:last-child td:nth-child(3),
+.subsPlan table tr:last-child td:nth-child(2){
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.subsPlan table tr th:nth-child(3),
+.subsPlan table tr th:nth-child(2){
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.subsPlan table.premium tr th:nth-child(3){
+    background: #1e2a48;
+    color: var(--text-color);
+    color: #fedf74;
+}
+
+.subsPlan table.premium tr td:nth-child(3){
+    border: 0px;
+    background: #1e2a48;
+    color: var(--text-color);
+}
+
+.subsPlan table.super tr th:nth-child(2){
+    color: var(--text-color);
+    background: #1e2a48;
+    color: #fedf74;
+}
+
+.subsPlan table.super tr td:nth-child(2){
+    color: var(--text-color);
+    border: 0px;
+    background: #1e2a48;
+}
+
+
+.planContainer{
+    display: flex;
+    /* padding: 8px 6px; */
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.planContainer .planBox{
+    width: 49%;
+    border: 1px solid var(--text-light-2);
+    padding: 10px 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.planBox.active{
+    background: #1f7fe0ae;
+    border-color: #1f7fe0ae;
+}
+
+.planBox.active h3{
+    color: #fedf74;
+}
+
+.planBox h1,
+.planBox h3{
+    margin: 3px 0;
+    color: var(--text-light);
+}
+
+.planBox h1{
+    font-size: 20px;
+}
+
+.planBox h1 span{
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.planBox.active .checkCircle{
+    display: flex;
+}
+
+.checkCircle{
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+    color: var(--secondary-color);
+    font-weight: 600;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.planBtn{
+    width: 100%;
+    background: #1f80e0;
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin: 14px 0;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    padding: 16px 0;
+    font-family: 'Roboto';
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.planBtn span{
+    font-family: 'Poppins';
+}
+
+.subs-bgContainer{
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.subs-bgImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+    box-shadow: inset 0 0 100px #192133;
+    animation: animateSubsBg 30s linear infinite;
+}
+
+@keyframes animateSubsBg {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -100%;
+    }
+}
+
+.subs-bgContainer .bg-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #192133b0;
+    z-index: -1;
+}
+
+.subs-bgContainer .bg-curved{
+    background: linear-gradient(0deg, rgba(12,17,27,1) 15%, rgba(12,17,27,0) 100%);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+}

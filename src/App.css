@@ -1,0 +1,16 @@
+:root {
+  --primary-color: #0c111b;
+  --secondary-color: #131a28;
+  --text-color: #fff;
+  --text-light: rgb(212, 212, 212);
+  --text-light-2: #aaa;
+  --blue: #1f80e0;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  overflow-x: hidden;
+}
