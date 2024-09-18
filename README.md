@@ -27,7 +27,7 @@ To get started with this project, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/hotstar-ui-clone.git
+   git clone https://github.com/AtulYadav25/Hotstar-UI-Clone-ReactJs
    cd hotstar-ui-clone
 
 2. **Install dependencies:**
